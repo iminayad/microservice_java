@@ -5,7 +5,7 @@ spring:
  data:
    mongodb:
        database: bankclient
-       uri: mongodb+srv://iminayad:root@cluster0.rc9rpyb.mongodb.net/?retryWrites=true&w=majority
+       uri: mongodb+srv://iminayad:7pPqcWwSB6aTLY3X@cluster0.rc9rpyb.mongodb.net/?retryWrites=true&w=majority
 
 eureka:
   client:

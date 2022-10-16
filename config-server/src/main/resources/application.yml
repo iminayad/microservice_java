@@ -9,8 +9,8 @@ spring:
       enabled: true
       server:
         git:
-          uri: https://github.com/iminayanttdata/bootcampNTTDATA.git
+          uri: https://github.com/iminayad/microservice_java.git
           default-label: main
           search-paths: config-data
-          username: iminayanttdata
-          password: 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
+#          username: iminayad
+#          password: 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
