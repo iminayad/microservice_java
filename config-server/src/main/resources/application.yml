@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: https://github.com/iminayanttdata/bootcampNTTDATA.git
+          default-label: main
+          search-paths: config-data
+          username: iminayanttdata
+          password: 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

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: msvc-client
+  cloud:
+    config:
+      enabled: true
+      uri: "optional:configserver:http://localhost:8888/"
+
+#  cache:
+#    type: redis
+#  redis:
+#    host: localhost
+#    port: '6379'

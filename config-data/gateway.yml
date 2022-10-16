@@ -1,0 +1,35 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: msvc-client
+          uri: lb://msvc-client
+          predicates:
+            - Path=/client/**
+        - id: msvc-product
+          uri: lb://msvc-product
+          predicates: 
+            - Path=/product/**
+        - id: msvc-account
+          uri: lb://msvc-account
+          predicates: 
+            - Path=/account/**
+        - id: msvc-operation
+          uri: lb://msvc-operation
+          predicates: 
+            - Path=/operation/**         

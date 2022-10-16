@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: msvc-product
+  cloud:
+    config:
+      enabled: true
+      uri: "optional:configserver:http://localhost:8888/"
